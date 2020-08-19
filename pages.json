@@ -1,0 +1,479 @@
+{
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"enablePullDownRefresh": true,
+				"app-plus": {
+					"animationType": "zoom-fade-out",
+					"animationDuration": 200,
+					"titleNView": false,
+					"scrollIndicator": "none",
+					"pullToRefresh": {
+						"color": "#f8c750",
+						"offset": "80px",
+						"style": "circle"
+					}
+				}
+			}
+		}, {
+			"path": "pages/login/login",
+			"style": {
+				"app-plus": {
+					"animationType": "zoom-fade-out",
+					"animationDuration": 200,
+					"titleNView": {
+						"backgroundColor": "#FFFFFF",
+						"buttons": [{
+							"fontSize": "22px",
+							"fontSrc": "/static/iconfont.ttf",
+							"text": "\ue6ae"
+						}]
+					}
+				}
+			}
+		}, {
+			"path": "pages/hot/hot",
+			"style": {
+				"enablePullDownRefresh": true,
+				"app-plus": {
+					"animationType": "zoom-fade-out",
+					"animationDuration": 200,
+					"titleNView": {
+						"titleText": "推荐",
+						"backgroundColor": "#f8c750"
+					},
+					"scrollIndicator": "none",
+					"pullToRefresh": {
+						"color": "#f8c750",
+						"style": "circle"
+					}
+				}
+			}
+		}, {
+			"path": "pages/my/my",
+			"style": {
+				"app-plus": {
+					"animationType": "zoom-fade-out",
+					"animationDuration": 200,
+					"titleNView": false
+				}
+			}
+		}, {
+			"path": "pages/inv/inv",
+			"style": {
+				"app-plus": {
+					"animationType": "zoom-fade-out",
+					"animationDuration": 200,
+					"titleNView": false
+				}
+			}
+		}, {
+			"path": "pages/search/search",
+			"style": {
+				"app-plus": {
+					"animationType": "zoom-fade-out",
+					"animationDuration": 200,
+					"titleNView": false
+				}
+			}
+		}, {
+			"path": "pages/rank/rank",
+			"style": {
+				"app-plus": {
+					"animationType": "zoom-fade-out",
+					"animationDuration": 200,
+					"titleNView": false
+				}
+			}
+		}, {
+			"path": "pages/myTaskList/myTaskList",
+			"style": {
+				"enablePullDownRefresh": true,
+				"app-plus": {
+					"animationType": "zoom-fade-out",
+					"animationDuration": 200,
+					"titleNView": {
+						"titleText": "我的任务",
+						"backgroundColor": "#f8c750"
+					},
+					"pullToRefresh": {
+						"color": "#f8c750",
+						"style": "circle"
+					},
+					"scrollIndicator": "none"
+				}
+			}
+		}, {
+			"path": "pages/smrz/smrz",
+			"style": {
+				"app-plus": {
+					"animationType": "zoom-fade-out",
+					"animationDuration": 200,
+					"titleNView": {
+						"titleText": "实名认证",
+						"backgroundColor": "#f8c750"
+					},
+					"scrollIndicator": "none"
+				}
+			}
+		}, {
+			"path": "pages/addTask/addTask",
+			"style": {
+				"app-plus": {
+					"animationType": "zoom-fade-out",
+					"animationDuration": 200,
+					"titleNView": {
+						"titleText": "选择任务类型",
+						"backgroundColor": "#f8c750"
+					},
+					"scrollIndicator": "none"
+				}
+			}
+		}, {
+			"path": "pages/taskDetail/taskDetail",
+			"style": {
+				"app-plus": {
+					"animationType": "zoom-fade-out",
+					"animationDuration": 200,
+					"titleNView": {
+						"titleText": "任务详情",
+						"backgroundColor": "#f8c750",
+						"buttons": [{
+							"type": "menu"
+						}]
+					},
+					"scrollIndicator": "none"
+				}
+			}
+		}, {
+			"path": "pages/setting/setting",
+			"style": {
+				"app-plus": {
+					"animationType": "zoom-fade-out",
+					"animationDuration": 200,
+					"titleNView": {
+						"titleText": "设置",
+						"backgroundColor": "#f8c750"
+					},
+					"scrollIndicator": "none"
+				}
+			}
+		}, {
+			"path": "pages/setTask/setTask",
+			"style": {
+				"enablePullDownRefresh": true,
+				"app-plus": {
+					"animationType": "zoom-fade-out",
+					"animationDuration": 200,
+					"titleNView": {
+						"titleText": "管理任务",
+						"backgroundColor": "#f8c750",
+						"buttons": [{
+							"text": "\ue66c",
+							"fontWeight": "bold",
+							"color": "#FFFFFF",
+							"fontSize": "22px",
+							"fontSrc": "/static/iconfont.ttf"
+						}]
+					},
+					"pullToRefresh": {
+						"color": "#f8c750",
+						"style": "circle"
+					},
+					"scrollIndicator": "none"
+				}
+			}
+		}, {
+			"path": "pages/addTask/addTask2",
+			"style": {
+				"app-plus": {
+					"animationType": "zoom-fade-out",
+					"animationDuration": 200,
+					"titleNView": {
+						"titleText": "发布任务1/2",
+						"backgroundColor": "#f8c750"
+					},
+					"scrollIndicator": "none"
+				}
+			}
+		}, {
+			"path": "pages/addTask/addTask3",
+			"style": {
+				"app-plus": {
+					"animationType": "zoom-fade-out",
+					"animationDuration": 200,
+					"titleNView": {
+						"titleText": "发布任务2/2",
+						"backgroundColor": "#f8c750"
+					},
+					"scrollIndicator": "none"
+				}
+			}
+		}, {
+			"path": "pages/orderDetail/orderDetail",
+			"style": {
+				"app-plus": {
+					"animationType": "zoom-fade-out",
+					"animationDuration": 200,
+					"titleNView": {
+						"titleText": "订单详情",
+						"backgroundColor": "#f8c750"
+					},
+					"scrollIndicator": "none"
+				}
+			}
+		}, {
+			"path": "pages/taskPreview/taskPreview",
+			"style": {
+				"app-plus": {
+					"animationType": "zoom-fade-out",
+					"animationDuration": 200,
+					"titleNView": {
+						"titleText": "任务预览",
+						"backgroundColor": "#f8c750"
+					},
+					"scrollIndicator": "none"
+				}
+			}
+		}, {
+			"path": "pages/approval/detail",
+			"style": {
+				"app-plus": {
+					"animationType": "zoom-fade-out",
+					"animationDuration": 200,
+					"titleNView": {
+						"titleText": "任务审核",
+						"backgroundColor": "#f8c750"
+					},
+					"scrollIndicator": "none"
+				}
+			}
+		}, {
+			"path": "pages/approval/list",
+			"style": {
+				"enablePullDownRefresh": true,
+				"app-plus": {
+					"animationType": "zoom-fade-out",
+					"animationDuration": 200,
+					"titleNView": {
+						"titleText": "我的任务审批",
+						"backgroundColor": "#f8c750"
+					},
+					"pullToRefresh": {
+						"color": "#f8c750",
+						"style": "circle"
+					},
+					"scrollIndicator": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/help/help",
+			"style": {
+				"enablePullDownRefresh": true,
+				"app-plus": {
+					"animationType": "zoom-fade-out",
+					"animationDuration": 200,
+					"titleNView": {
+						"titleText": "帮助中心",
+						"backgroundColor": "#f8c750"
+					},
+					"scrollIndicator": "none",
+					"pullToRefresh": {
+						"color": "#f8c750",
+						"style": "circle"
+					}
+				}
+			}
+		}, {
+			"path": "pages/vip/vip",
+			"style": {
+				"app-plus": {
+					"animationType": "zoom-fade-out",
+					"animationDuration": 200,
+					"titleNView": {
+						"titleText": "开通会员",
+						"backgroundColor": "#f8c750"
+					},
+					"scrollIndicator": "none"
+				}
+			}
+		}, {
+			"path": "pages/vip/home",
+			"style": {
+				"app-plus": {
+					"animationType": "zoom-fade-out",
+					"animationDuration": 200,
+					"titleNView": {
+						"titleText": "会员中心",
+						"backgroundColor": "#f8c750"
+					},
+					"scrollIndicator": "none"
+				}
+			}
+		}, {
+			"path": "pages/tools/tools",
+			"style": {
+				"app-plus": {
+					"animationType": "zoom-fade-out",
+					"animationDuration": 200,
+					"titleNView": {
+						"titleText": "购买刷新",
+						"backgroundColor": "#f8c750"
+					},
+					"scrollIndicator": "none"
+				}
+			}
+		}, {
+			"path": "pages/bond/recharge",
+			"style": {
+				"app-plus": {
+					"animationType": "zoom-fade-out",
+					"animationDuration": 200,
+					"titleNView": {
+						"titleText": "充值",
+						"backgroundColor": "#f8c750"
+					},
+					"scrollIndicator": "none"
+				}
+			}
+		}, {
+			"path": "pages/bond/bond",
+			"style": {
+				"app-plus": {
+					"animationType": "zoom-fade-out",
+					"animationDuration": 200,
+					"titleNView": {
+						"titleText": "保证金",
+						"backgroundColor": "#f8c750"
+					},
+					"scrollIndicator": "none"
+				}
+			}
+		}, {
+			"path": "pages/help/detail",
+			"style": {
+				"app-plus": {
+					"animationType": "zoom-fade-out",
+					"animationDuration": 200,
+					"titleNView": {
+						"titleText": "帮助详情",
+						"backgroundColor": "#f8c750"
+					},
+					"scrollIndicator": "none"
+				}
+			}
+		}
+	    ,{
+            "path" : "pages/wallet/payment",
+            "style" : {
+				"app-plus": {
+					"animationType": "zoom-fade-out",
+					"animationDuration": 200,
+					"titleNView": {
+						"titleText": "收款账户",
+						"backgroundColor": "#f8c750"
+					},
+					"scrollIndicator": "none"
+				}
+			}
+        },
+		{
+		    "path" : "pages/talk/index",
+		    "style" : {
+				"app-plus": {
+					"animationType": "zoom-fade-out",
+					"animationDuration": 200,
+					"titleNView": {
+						"titleText": "聊天",
+						"backgroundColor": "#f8c750"
+					},
+					"scrollIndicator": "none"
+				}
+			}
+		}
+        ,{
+            "path" : "pages/wallet/tx",
+            "style" : {
+				"app-plus": {
+					"animationType": "zoom-fade-out",
+					"animationDuration": 200,
+					"titleNView": {
+						"titleText": "提现",
+						"backgroundColor": "#f8c750"
+					},
+					"scrollIndicator": "none"
+				}
+			}
+        }
+        ,{
+            "path" : "pages/wallet/addPay",
+            "style" : {
+				"app-plus": {
+					"animationType": "zoom-fade-out",
+					"animationDuration": 200,
+					"titleNView": {
+						"titleText": "添加收款方式",
+						"backgroundColor": "#f8c750"
+					},
+					"scrollIndicator": "none"
+				}
+			}
+        }
+        ,{
+            "path" : "pages/notice/notice",
+            "style" : {
+				"enablePullDownRefresh": true,
+				"app-plus": {
+					"animationType": "zoom-fade-out",
+					"animationDuration": 200,
+					"titleNView": {
+						"titleText": "消息通知",
+						"backgroundColor": "#f8c750"
+					},
+					"scrollIndicator": "none"
+				}
+			}
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "悬赏猫",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#f8c750",
+		"borderStyle": "white",
+		"backgroundColor": "#FFFFFF",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/image/home.png",
+				"selectedIconPath": "static/image/home_selected.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/hot/hot",
+				"iconPath": "static/image/tj.png",
+				"selectedIconPath": "static/image/tj_selected.png",
+				"text": "推荐"
+			}, {
+				"pagePath": "pages/inv/inv",
+				"iconPath": "static/image/inv.png",
+				"selectedIconPath": "static/image/inv_selected.png",
+				"text": "推广"
+			},
+			{
+				"pagePath": "pages/my/my",
+				"iconPath": "static/image/my.png",
+				"selectedIconPath": "static/image/my_selected.png",
+				"text": "我的"
+			}
+		]
+	}
+}
